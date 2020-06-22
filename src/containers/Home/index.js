@@ -4,7 +4,7 @@ import './style.css';
 
 const Home = props => {
     return (
-<p></p>
+<div>Home</div>
     )
 }
 

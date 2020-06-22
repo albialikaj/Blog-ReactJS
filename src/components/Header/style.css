@@ -5,7 +5,6 @@
 
 .headerMenu a{
     display: inline-block;
-    /* margin : top-bottom | left-right */
     margin: 0px 10px;
     text-decoration: none;
     color:#245ba7; /* #3fa535*/
