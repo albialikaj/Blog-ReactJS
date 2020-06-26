@@ -1,5 +1,5 @@
 import React from 'react'
-import './style.css';
+
 import Card from '../../components/UI/Card';
 import BlogPost from '../../components/BlogPost';
 import Sidebar from '../../components/Sidebar';
@@ -10,18 +10,14 @@ import Sidebar from '../../components/Sidebar';
 
 const Post = (props) => {
 
-console.log(props);
-
-
   return(
-   <section className="container"> 
+   <section className="main"> 
 
+<div class="col-md-8">
 <BlogPost {...props}/>
+</div>
 <Sidebar />
 
-        {/* <Card>ss</Card> */}
-
-  
    </section>
    )
 

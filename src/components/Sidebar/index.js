@@ -21,17 +21,21 @@ const Sidebar  = (props) => {
   return(
 
     <div className="sideBar">
-recent
+<h3>Related posts</h3>
 {
   posts.map(post => {
 
     return(
+      <ul>
       <NavLink key={post.id} to={`/post/${post.id}`}>
       <div className="recentPost">
-          <h3>{post.blogTitle}</h3>
-          <span>{post.postedOn}</span>
+    
+          <li>{post.blogTitle}</li>
+     
+
       </div>
   </NavLink>
+  </ul>
     )
 
   })

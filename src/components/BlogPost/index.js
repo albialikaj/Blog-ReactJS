@@ -28,16 +28,23 @@ if(post.blogImage == "") return null;
 <div className="blog-post-container">
 <Card>
 
-<div className="blogHeader">
-<span>Featured</span>
-  <h1>{post.blogTitle}</h1>
-<span>Posted on: 16 Jan 2020 by Albi Alikaj</span>
-</div>
+
+
+
+
+<h3 class="my-5">{post.blogTitle}</h3>
 <div className="post-thumb">
+
+  
   <img src={post.blogImage}/>
   {/* <img src={require('../../assets/images/mustang.jpg')} /> */}
 </div>
+<div className="blog-post-text">
+<span class="blog-post-tag">Posted on: 16 Jan 2020 by Albi Alikaj</span>
+<div class="clearfix"></div>
 
+{post.blogText}
+</div>
 </Card>
 </div>
 
