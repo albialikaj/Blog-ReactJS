@@ -9,12 +9,11 @@ import React from 'react';
 const Header = (props) => {
   return(
     <div>
-    <header className="header">
-        {/* <div>
-            <a href="#"><i className="fa fa-facebook-square"></i> </a>
-            <a href="#"><i className="fa fa-linkedin-square"></i> </a>
-            <a href="#"><i className="fa fa-github-square"></i> </a>
-        </div> */}
+    <header className="header">   
+        <div>  &nbsp; 
+            <a href="https://www.linkedin.com/in/albialikaj/" target="_blank"><i className="fa fa-linkedin-square"></i> </a>
+            <a href="https://github.com/albialikaj"><i className="fa fa-github-square"></i> </a>
+        </div>
      </header>
     </div>
    )

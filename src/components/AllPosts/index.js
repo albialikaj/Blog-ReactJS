@@ -5,10 +5,10 @@ import { NavLink } from 'react-router-dom';
 
 /**
 * @author
-* @function Sidebar 
+* @function AllPosts 
 **/
 
-const Sidebar  = (props) => {
+const AllPosts  = (props) => {
 
   const [posts, setPosts] = useState([]);
 
@@ -20,7 +20,7 @@ const Sidebar  = (props) => {
 
   return(
 
-    <div>
+    <div className="row">
 
 {
   posts.map(post => {
@@ -30,15 +30,15 @@ const Sidebar  = (props) => {
      
 
 
-      <div >
+      <div className="col-md-3">
 
 
-<img style={{width: "100%"}} src={post.blogImage}/>
+           <img src={post.blogImage} style={{width: "100%"}} />
    
+    <p className="lead">
+    <NavLink key={post.id} to={`/post/${post.id}`}>  <div className = "post-title">{post.blogTitle}</div>  </NavLink>
 
-<NavLink key={post.id} to={`/post/${post.id}`}>  <div className = "post-title">{post.blogTitle}</div>  </NavLink>
-
-
+    </p>
 
 
        </div>
@@ -58,4 +58,4 @@ const Sidebar  = (props) => {
 
  }
 
-export default Sidebar;
+export default AllPosts 

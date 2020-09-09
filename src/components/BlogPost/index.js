@@ -1,6 +1,6 @@
 import React , {useState, useEffect} from 'react';
 
-import Card from '../UI/Card';
+
 import blogPost from '../../data/blog.json';
 
 /**
@@ -24,9 +24,12 @@ useEffect(()=>{
 if(post.blogImage == "") return null;
 
   return(
+<div>
+
+
+
 
 <div className="blog-post-container">
-<Card>
 
 
 
@@ -35,18 +38,18 @@ if(post.blogImage == "") return null;
 <h3 class="my-5">{post.blogTitle}</h3>
 <div className="post-thumb">
 
+<span class="blog-post-tag">{post.blogCategory}</span>
+  <img src={post.blogImage} style={{width:"100%"}}/>
   
-  <img src={post.blogImage}/>
   {/* <img src={require('../../assets/images/mustang.jpg')} /> */}
 </div>
 <div className="blog-post-text">
-<span class="blog-post-tag">Posted on: 16 Jan 2020 by Albi Alikaj</span>
-<div class="clearfix"></div>
 
-{post.blogText}
+<div>{post.blogText}</div>
+<p className="mt-5 text-muted">Posted on: {post.postedOn} by {post.author}</p>
 </div>
-</Card>
-</div>
+
+</div></div>
 
    )
 

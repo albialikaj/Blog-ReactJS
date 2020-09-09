@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Card from '../../components/UI/Card';
+
 import BlogPost from '../../components/BlogPost';
 import Sidebar from '../../components/Sidebar';
 /**
@@ -11,14 +11,17 @@ import Sidebar from '../../components/Sidebar';
 const Post = (props) => {
 
   return(
-   <section className="main"> 
 
-<div class="col-md-8">
+<div className="row justify-content-between">
+<div class="col-md-8 ">
 <BlogPost {...props}/>
-</div>
-<Sidebar />
 
-   </section>
+
+</div>
+<div class="col-md-offset-2 col-md-2 mt-5" style={{height:"50vh", overflow:"hidden;"}}><Sidebar /></div>
+
+</div>
+
    )
 
  }

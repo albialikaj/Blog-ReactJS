@@ -2,6 +2,10 @@ body{
   background-color: #fafaff;
 }
 
+a:hover{
+  text-decoration:none;
+}
+
 .header {
   display: flex;
   max-width: 1024px;
@@ -66,9 +70,9 @@ margin: auto;
   height: 24px;
   display: inline-flex;
   align-items: center;
-  margin-bottom: 16px;
+bottom: -30px;
   position: relative;
-  left: -39px;
+  left: -7px;
 }
 
 .blog-post-tag:before{
@@ -85,18 +89,4 @@ margin: auto;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     transform: rotate(45deg);
-}
-.sideBar{
-  padding-top: 60px;
-  margin-left:25px;
-  width: calc( 100% - 725px);
-}
-
-.post-thumb img{
-  width:100%;
-}
-
-
-.card{
-  padding:15px;
 }
